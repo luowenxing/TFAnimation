@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TFAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRd-1J-dOV">
+                                <rect key="frame" x="0.0" y="290" width="20" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="AcX-Cq-Bgg"/>
+                                    <constraint firstAttribute="height" constant="20" id="jBF-SV-gB1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljz-at-G3D">
+                                <rect key="frame" x="270" y="469" width="60" height="30"/>
+                                <state key="normal" title="重新播放"/>
+                                <connections>
+                                    <action selector="btnReplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDy-YP-0wg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ljz-at-G3D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A8N-Va-DRi"/>
+                            <constraint firstItem="yRd-1J-dOV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qra-Fn-Miz"/>
+                            <constraint firstItem="yRd-1J-dOV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VYy-sZ-nMe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ljz-at-G3D" secondAttribute="bottom" constant="101" id="op2-1Y-lka"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rect" destination="yRd-1J-dOV" id="793-qd-RwX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="357"/>
+        </scene>
+    </scenes>
+</document>
