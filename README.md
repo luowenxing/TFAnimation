@@ -2,8 +2,9 @@
 The `timingFunction` of `CAAnimation` only allow us create a named or cubic-bezier `CAMediaTimingFunction`.Now the `TFAnimation` is a light weight implementation which enhance `CABasicAnimation` with custom `timingFunction` whose domain should be between 0 and 1 like cubic-bezier.
 
 # Demo
-A simple sin curve like animation with timingFunction of f(t) = sin (4π * t)
 ![A simple sin curve like animation](https://github.com/luowenxing/TFAnimation/blob/master/TFAnimation/Demo/demo.gif?raw=true)
+
+A simple sin curve like animation with timingFunction of f(t) = sin (4π * t)
 
 # Usage
 * Drag TFAnimation folder to your project
