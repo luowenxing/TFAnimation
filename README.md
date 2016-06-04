@@ -23,5 +23,5 @@ animationY.timeFunction = {
 * There are some pre-defined time function for convience,see `TFEasingFunction.swift`.
 
 # Reference & Inspired
-[animations-explained](https://www.objc.io/issues/12-animations/animations-explained/)
-[RBBAnimation](https://github.com/robb/RBBAnimation)
+* [animations-explained](https://www.objc.io/issues/12-animations/animations-explained/)
+* [RBBAnimation](https://github.com/robb/RBBAnimation)
